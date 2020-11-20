@@ -1,0 +1,80 @@
+// USER VARIABLES SECTION
+
+$lblue: #f2f7fa;
+$dred: #5b0d0b;
+$lred: #641e1e;
+$grey: #647a84;
+$greytext: #506670;
+$green_new: #0c380f;
+$orange: #db9f3f;
+$accent: #f2b24f; // Accent Color
+$fontsize: 16px; // Body Font Size
+$textcolor: #000; // Text Color
+$lineheight: 1.875; // Document Line Height
+$systemfont: -apple-system, BlinkMacSystemFont, Arial, sans-serif; // System Font Family
+$opensans: "Open Sans";
+$roboto: "Roboto";
+
+// Bootstrap compatible gutter variable => $gutter
+$grid-gutter-width: 30px;
+$gutter: $grid-gutter-width;
+
+// IMPORT SECTION
+
+@import 'node_modules/bootstrap/scss/bootstrap-reboot.scss'; // Bootstrap Reboot collection
+@import 'node_modules/bootstrap/scss/mixins/_breakpoints.scss'; // Bootstrap Breakpoints mixin
+// @import 'node_modules/bootstrap/scss/bootstrap-grid.scss'; // Optional Bootstrap Grid
+// @import 'node_modules/bootstrap/scss/utilities/_sizing.scss'; // Optional Bootstrap Utilites
+
+// FONTS LOAD SECTION
+
+@mixin font($fname, $fstyle, $fweight, $furl) {
+	@font-face {
+		font-family: $fname;
+		font-style: $fstyle;
+		font-weight: $fweight;
+		src: local($fname), url($furl) format('woff2');
+		// font-display: swap; // Uncomment to initially display system fonts
+	}
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
+@include font('Roboto', normal, 400, '../fonts/roboto-regular-webfont.woff2');
+//@include font('Roboto', italic, 400, '../fonts/roboto-italic-webfont.woff2');
+@include font('Roboto', normal, 700, '../fonts/roboto-bold-webfont.woff2');
+//@include font('Roboto', italic, 700, '../fonts/roboto-bolditalic-webfont.woff2');
+
+// GENERAL DOCUMENT STYLES
+
+/**
+ * Owl Carousel v2.3.4
+ * Copyright 2013-2018 David Deutsch
+ * Licensed under: SEE LICENSE IN https://github.com/OwlCarousel2/OwlCarousel2/blob/master/LICENSE
+ */
+.owl-carousel,.owl-carousel .owl-item{-webkit-tap-highlight-color:transparent;position:relative}.owl-carousel{display:none;width:100%;z-index:1}.owl-carousel .owl-stage{position:relative;-ms-touch-action:pan-Y;touch-action:manipulation;-moz-backface-visibility:hidden}.owl-carousel .owl-stage:after{content:".";display:block;clear:both;visibility:hidden;line-height:0;height:0}.owl-carousel .owl-stage-outer{position:relative;overflow:hidden;-webkit-transform:translate3d(0,0,0)}.owl-carousel .owl-item,.owl-carousel .owl-wrapper{-webkit-backface-visibility:hidden;-moz-backface-visibility:hidden;-ms-backface-visibility:hidden;-webkit-transform:translate3d(0,0,0);-moz-transform:translate3d(0,0,0);-ms-transform:translate3d(0,0,0)}.owl-carousel .owl-item{min-height:1px;float:left;-webkit-backface-visibility:hidden;-webkit-touch-callout:none}.owl-carousel .owl-item img{display:block;width:100%}.owl-carousel .owl-dots.disabled,.owl-carousel .owl-nav.disabled{display:none}.no-js .owl-carousel,.owl-carousel.owl-loaded{display:block}.owl-carousel .owl-dot,.owl-carousel .owl-nav .owl-next,.owl-carousel .owl-nav .owl-prev{cursor:pointer;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.owl-carousel .owl-nav button.owl-next,.owl-carousel .owl-nav button.owl-prev,.owl-carousel button.owl-dot{background:0 0;color:inherit;border:none;padding:0!important;font:inherit}.owl-carousel.owl-loading{opacity:0;display:block}.owl-carousel.owl-hidden{opacity:0}.owl-carousel.owl-refresh .owl-item{visibility:hidden}.owl-carousel.owl-drag .owl-item{-ms-touch-action:pan-y;touch-action:pan-y;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.owl-carousel.owl-grab{cursor:move;cursor:grab}.owl-carousel.owl-rtl{direction:rtl}.owl-carousel.owl-rtl .owl-item{float:right}.owl-carousel .animated{animation-duration:1s;animation-fill-mode:both}.owl-carousel .owl-animated-in{z-index:0}.owl-carousel .owl-animated-out{z-index:1}.owl-carousel .fadeOut{animation-name:fadeOut}@keyframes fadeOut{0%{opacity:1}100%{opacity:0}}.owl-height{transition:height .5s ease-in-out}.owl-carousel .owl-item .owl-lazy{opacity:0;transition:opacity .4s ease}.owl-carousel .owl-item .owl-lazy:not([src]),.owl-carousel .owl-item .owl-lazy[src^=""]{max-height:0}.owl-carousel .owl-item img.owl-lazy{transform-style:preserve-3d}.owl-carousel .owl-video-wrapper{position:relative;height:100%;background:#000}.owl-carousel .owl-video-play-icon{position:absolute;height:80px;width:80px;left:50%;top:50%;margin-left:-40px;margin-top:-40px;background:url(owl.video.play.png) no-repeat;cursor:pointer;z-index:1;-webkit-backface-visibility:hidden;transition:transform .1s ease}.owl-carousel .owl-video-play-icon:hover{-ms-transform:scale(1.3,1.3);transform:scale(1.3,1.3)}.owl-carousel .owl-video-playing .owl-video-play-icon,.owl-carousel .owl-video-playing .owl-video-tn{display:none}.owl-carousel .owl-video-tn{opacity:0;height:100%;background-position:center center;background-repeat:no-repeat;background-size:contain;transition:opacity .4s ease}.owl-carousel .owl-video-frame{position:relative;z-index:1;height:100%;width:100%}
+
+::placeholder {
+	color: $green_new;
+}
+
+::selection {
+	background-color: $accent;
+	color: #fff;
+}
+
+input, textarea {
+	outline: none;
+	&:focus:required:invalid { border-color: red }
+	&:required:valid { border-color: green }
+}
+
+body {
+	font-family: $opensans;
+	font-size: $fontsize;
+	line-height: $lineheight;
+	color: $textcolor;
+	min-width: 320px;
+	position: relative;
+	overflow-x: hidden;
+}

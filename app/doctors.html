@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+
+    <meta charset="utf-8">
+    <title>Mitc kliniken</title>
+    <link rel="stylesheet" href="bootstrap/build/bootstrap.min.css">
+    <link rel="stylesheet" href="css/app.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+
+<header>
+    <div class="container">
+        <div class="header-in">
+            <a href="#" class="header-logo">
+                <img src="images/dest/logo.svg" alt="">
+            </a>
+            <div class="header-menu ">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Fachgebiete</a>
+                        <ul>
+                            <li><a href="#">Chirurgie</a></li>
+                            <li><a href="#">Gynäkologie</a></li>
+                            <li><a href="#">Urologie</a></li>
+                            <li><a href="#">Gastroenterologie</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Zentren</a>
+                        <ul>
+                            <li><a href="#">Koloproktologie-Zentrum</a></li>
+                            <li><a href="#">Endometriosezentrum</a></li>
+                            <li><a href="#">Refluxzentrum</a></li>
+                            <li><a href="#">Hernienzentrum</a></li>
+                            <li><a href="#">Myomzentrum</a></li>
+                            <li><a href="#">Gastroenterologie Zentrum</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Fachärzte</a>
+                        <ul>
+                            <li><a href="#">Warum MITC-Ärzte?</a></li>
+                            <li><a href="#">Kontakt Fachärzte</a></li>
+                            <li><a href="#">Experten Zweitmeinung</a></li>
+                            <li><a href="#">Individuelle persönliche Behandlung</a></li>
+                            <li><a href="#">Indikation und Operation</a></li>
+                            <li><a href="#">Komplexe schwere Fälle</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">MITC-Klinik</a>
+                        <ul>
+                            <li><a href="#">Warum MITC?</a></li>
+                            <li><a href="#">Warum Minimalinvasiv?</a></li>
+                            <li><a href="#">Philosophie</a></li>
+                            <li><a href="#">Service Excellence</a></li>
+                            <li><a href="#">Qualitätsversprechen</a></li>
+                            <li><a href="#">Schnelle Terminvergabe</a></li>
+                            <li><a href="#">Kurzstationär ambulant</a></li>
+                            <li><a href="#">Moderne Technologie</a></li>
+                            <li><a href="#">Interdisziplinäre personalisierte Behandlung</a></li>
+                            <li><a href="#">Patientenzentrierte Prozesse und Abläufe</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">KOntakt</a></li>
+                </ul>
+                <div class="header-togglebox d-none d-xl-block">
+                    <div class="search-icon">
+                        <form class="search-toggle" action="http://localhost:3000/">
+                            <input name="s" type="search">
+                            <input type="submit">
+                            <span class="header-search-toggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path d="M508.5 481.6l-129-129c-2.3-2.3-5.3-3.5-8.5-3.5h-10.3C395 312 416 262.5 416 208 416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c54.5 0 104-21 141.1-55.2V371c0 3.2 1.3 6.2 3.5 8.5l129 129c4.7 4.7 12.3 4.7 17 0l9.9-9.9c4.7-4.7 4.7-12.3 0-17zM208 384c-97.3 0-176-78.7-176-176S110.7 32 208 32s176 78.7 176 176-78.7 176-176 176z"/></svg>
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                            <path d="M193.94 256L296.5 153.44l21.15-21.15c3.12-3.12 3.12-8.19 0-11.31l-22.63-22.63c-3.12-3.12-8.19-3.12-11.31 0L160 222.06 36.29 98.34c-3.12-3.12-8.19-3.12-11.31 0L2.34 120.97c-3.12 3.12-3.12 8.19 0 11.31L126.06 256 2.34 379.71c-3.12 3.12-3.12 8.19 0 11.31l22.63 22.63c3.12 3.12 8.19 3.12 11.31 0L160 289.94 262.56 392.5l21.15 21.15c3.12 3.12 8.19 3.12 11.31 0l22.63-22.63c3.12-3.12 3.12-8.19 0-11.31L193.94 256z"/>
+                          </svg>
+                    </span>
+                        </form>
+                    </div>
+                    <div class="closemenu-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                            <path d="M193.94 256L296.5 153.44l21.15-21.15c3.12-3.12 3.12-8.19 0-11.31l-22.63-22.63c-3.12-3.12-8.19-3.12-11.31 0L160 222.06 36.29 98.34c-3.12-3.12-8.19-3.12-11.31 0L2.34 120.97c-3.12 3.12-3.12 8.19 0 11.31L126.06 256 2.34 379.71c-3.12 3.12-3.12 8.19 0 11.31l22.63 22.63c3.12 3.12 8.19 3.12 11.31 0L160 289.94 262.56 392.5l21.15 21.15c3.12 3.12 8.19 3.12 11.31 0l22.63-22.63c3.12-3.12 3.12-8.19 0-11.31L193.94 256z"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="mobile-togglebox d-xl-none">
+                <div class="icon-menuopen">
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="body">
+    <section class="page-top">
+        <div class="container">
+            <div class="page-top-in">
+                <img class="object-cover" src="images/dest/page-top-bg.jpg" alt="">
+                <div class="page-top-text">
+                    <h1>Unsere
+                        Fachärzte</h1>
+                </div>
+                <div class="page-top-cat">
+                    <a href="#" class="slider-cat orange-slider-cat">
+                        <img src="images/dest/slide4.svg" alt="">
+                        <span>Termin vereinbaren</span>
+                    </a>
+                </div>
+            </div>
+            <div class="green_block"></div>
+        </div>
+    </section>
+    <section class="directimgtext reverseimgtext">
+        <div class="container">
+            <div class="experten-in directimgtext-in reverseimgtext-in">
+                <div class="experten-left directimgtext-wider">
+                    <div class="experten directimgtext-text reverseimgtext-text">
+                        <div class="t-section">
+                            <h3>Unsere Experten</h3>
+                            <h2>Warum
+                                MITC Ärzte?</h2>
+                        </div>
+
+                        <p>Die Ärzte der MITC sind alle Fachärzte mit jahrelangen Erfahrungen auf ihrem Gebiet.</p>
+                        <p>Ihr Streben gilt der interdisziplinären Zusammenarbeit, um ein Optimum diagnostischer und
+                            therapeutischer Maßnahmen in einer für Sie personalisierten Medizin zu bündeln.</p>
+                        <p>Die MITC-Operateure sind in der Lage personalisierte Therapien für jeden Patienten
+                            individualisiert durchzuführen. In einem patientenzentrierten Behandlungsprozess werden Sie
+                            bis zu Ihrer Rekonvaleszenz von …</p>
+                        <a href="#" class="more-btn">
+                            <span>mehr</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="11.115" height="18" viewBox="0 0 11.115 18">
+                                <path id="Контур_6331" data-name="Контур 6331"
+                                      d="M2.115,0,0,2.115,6.87,9,0,15.885,2.115,18l9-9Z" fill="#647a84"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="experten-right directimgtext-smaller reverseimgtext-right blbtmright img-bframe-rev">
+                    <img src="images/dest/doctor.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="doctors">
+        <div class="container">
+            <div class="doctors-in">
+                <div class="doctors-main">
+                    <h2>MITC
+                        Fachärzte</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget
+                        dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes,
+                        nascetur ridiculus mus. </p>
+                </div>
+                <div class="position-relative">
+                    <div class="doctors-slider">
+                        <div class="item">
+                            <div class="item-card">
+                                <img src="images/dest/doctor-photo.jpg" alt="">
+                                <a href="#"><b>Prof. Dr. med. Omid Abri</b></a>
+                                <p>Facharzt für Allgemeine-,
+                                    Viszeral- und Gefäßchirurgie, Proktologie</p>
+                                <a href="#" class="doctor-more">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                        <path id="Контур_4362" data-name="Контур 4362"
+                                              d="M12,0,9.885,2.115l8.37,8.385H0v3H18.255l-8.37,8.385L12,24,24,12Z"
+                                              transform="translate(0 24) rotate(-90)" fill="#0b340e"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="item-card">
+                                <img src="images/dest/doctor-photo.jpg" alt="">
+                                <a href="#"><b>Prof. Dr. med. Omid Abri</b></a>
+                                <p>Facharzt für Allgemeine-,
+                                    Viszeral- und Gefäßchirurgie, Proktologie</p>
+                                <a href="#" class="doctor-more">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                        <path id="Контур_4362" data-name="Контур 4362"
+                                              d="M12,0,9.885,2.115l8.37,8.385H0v3H18.255l-8.37,8.385L12,24,24,12Z"
+                                              transform="translate(0 24) rotate(-90)" fill="#0b340e"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="item-card">
+                                <img src="images/dest/doctor-photo.jpg" alt="">
+                                <a href="#"><b>Prof. Dr. med. Omid Abri</b></a>
+                                <p>Facharzt für Allgemeine-,
+                                    Viszeral- und Gefäßchirurgie, Proktologie</p>
+                                <a href="#" class="doctor-more">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                        <path id="Контур_4362" data-name="Контур 4362"
+                                              d="M12,0,9.885,2.115l8.37,8.385H0v3H18.255l-8.37,8.385L12,24,24,12Z"
+                                              transform="translate(0 24) rotate(-90)" fill="#0b340e"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="item-card">
+                                <img src="images/dest/doctor-photo.jpg" alt="">
+                                <a href="#"><b>Prof. Dr. med. Omid Abri</b></a>
+                                <p>Facharzt für Allgemeine-,
+                                    Viszeral- und Gefäßchirurgie, Proktologie</p>
+                                <a href="#" class="doctor-more">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                        <path id="Контур_4362" data-name="Контур 4362"
+                                              d="M12,0,9.885,2.115l8.37,8.385H0v3H18.255l-8.37,8.385L12,24,24,12Z"
+                                              transform="translate(0 24) rotate(-90)" fill="#0b340e"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="item-card">
+                                <img src="images/dest/doctor-photo.jpg" alt="">
+                                <a href="#"><b>Prof. Dr. med. Omid Abri</b></a>
+                                <p>Facharzt für Allgemeine-,
+                                    Viszeral- und Gefäßchirurgie, Proktologie</p>
+                                <a href="#" class="doctor-more">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                        <path id="Контур_4362" data-name="Контур 4362"
+                                              d="M12,0,9.885,2.115l8.37,8.385H0v3H18.255l-8.37,8.385L12,24,24,12Z"
+                                              transform="translate(0 24) rotate(-90)" fill="#0b340e"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-carousel="doctorsslider" class="slider-top-nav">
+                        <div class="arrow-left">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                <path d="M231.536 475.535l7.071-7.07c4.686-4.686 4.686-12.284 0-16.971L60.113 273H436c6.627 0 12-5.373 12-12v-10c0-6.627-5.373-12-12-12H60.113L238.607 60.506c4.686-4.686 4.686-12.284 0-16.971l-7.071-7.07c-4.686-4.686-12.284-4.686-16.97 0L3.515 247.515c-4.686 4.686-4.686 12.284 0 16.971l211.051 211.05c4.686 4.686 12.284 4.686 16.97-.001z"/>
+                            </svg>
+                        </div>
+                        <div class="arrow-right">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                <path d="M216.464 36.465l-7.071 7.07c-4.686 4.686-4.686 12.284 0 16.971L387.887 239H12c-6.627 0-12 5.373-12 12v10c0 6.627 5.373 12 12 12h375.887L209.393 451.494c-4.686 4.686-4.686 12.284 0 16.971l7.071 7.07c4.686 4.686 12.284 4.686 16.97 0l211.051-211.05c4.686-4.686 4.686-12.284 0-16.971L233.434 36.465c-4.686-4.687-12.284-4.687-16.97 0z"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contact-form">
+        <div class="container">
+            <div class="contact-form-in">
+                <div class="form-big">
+                    <h3>Allgemeine Anfrage</h3>
+                    <div class="row no-gutters form-biginside">
+
+                        <div class="form-row form-row1">
+                            <div class="form-bigleft">
+                                <div>
+                                    <b>Angaben</b>
+                                    <div>
+                                        <label for="Angaben">
+                                            <select class="single-select" id="Angaben">
+                                                <option value="Angaben">Angaben</option>
+                                                <option value="1">1</option>
+                                            </select>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div>
+                                    <b>Geburtsdatum</b>
+                                    <div class="row no-gutters three-selects">
+                                        <div>
+                                            <select name="Tag">
+                                                <option value="Tag">Tag</option>
+                                                <option value="1">1</option>
+                                            </select>
+                                        </div>
+                                        <div>
+                                            <select name="Monat">
+                                                <option value="Monat">Monat</option>
+                                                <option value="1">1</option>
+                                            </select>
+                                        </div>
+                                        <div>
+                                            <select name="Jahr">
+                                                <option value="Jahr">Jahr</option>
+                                                <option value="1">1</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row twoinputs-row no-gutters">
+                                    <div>
+                                        <input placeholder="Vorname" type="text">
+                                    </div>
+                                    <div>
+                                        <input placeholder="Nachname" type="text">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-bigright">
+                                <div>
+                                    <b>Diagnose</b>
+                                    <div class="input-row">
+                                        <input type="text">
+                                    </div>
+                                </div>
+                                <div class="checkbox-row">
+                                    <b>Haben Sie eine Überweisung</b>
+                                    <div class="row  no-gutters">
+                                        <div class="checkbox-label">
+                                            <input class="chb" id="Ja" type="checkbox">
+                                            <label for="Ja">Ja</label>
+                                        </div>
+                                        <div class="checkbox-label">
+                                            <input class="chb" type="checkbox" id="Nein">
+                                            <label for="Nein">Nein</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-row form-row3">
+                            <div class="form-bigleft">
+                                <div>
+                                    <b>Kontakt</b>
+                                    <div class="row no-gutters twoinputs-row">
+                                        <div>
+                                            <input placeholder="E-Mail" type="text">
+                                        </div>
+                                        <div>
+                                            <input placeholder="Telefon" type="text">
+                                        </div>
+                                    </div>
+                                    <div class="checkbox-label">
+                                        <input id="Rückruf" type="checkbox">
+                                        <label for="Rückruf">Ich bitte um Rückruf</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-bigright">
+                                <div>
+                                    <b>Einweisender Arzt/einweisende Ärztin</b>
+                                    <div class="longline-row">
+                                        <input type="text">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row form-row4 form-row-longline">
+                            <div class="form-bigleft">
+                                <div>
+                                    <b>Nachricht</b>
+                                    <div class="input-row input-row-longline">
+                                        <input type="text">
+                                    </div>
+                                    <div class="checkbox-label">
+                                        <input id="Hiermit" type="checkbox">
+                                        <label for="Hiermit">Hiermit stimme ich den Datenschutzhinweisen zu.</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-bigright">
+                                <button class="btn"><span>Senden</span></button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="form-content text-vertical pd-left">
+                    <div>
+                        <div class="t-section">
+                            <h3>Kontakt</h3>
+                            <h2>Termin
+                                vereinbaren</h2>
+                        </div>
+
+                        <p>Unsere Ärzte sind anerkannte Spezialisten mit einem breiten Spektrum minimalinvasiver
+                            Therapien oder Endoskopien, mit dem Verständnis einer ganzheitlich, personalisierten
+                            Diagnostik und Therapie.</p>
+                        <p>Denken Sie bitte daran, wenn Sie Ihren Experten kontaktieren wollen, dass diese nicht 24/7 am
+                            Telefon oder Laptop sitzen können. Aber Sie melden sich unbedingt bei Ihnen.</p>
+                        <div class="p-tel">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+                                <path id="Контур_6325" data-name="Контур 6325"
+                                      d="M43,30.691,31.289,29.336l-5.6,5.6A33.437,33.437,0,0,1,11.043,20.29l5.623-5.623L15.31,3H3.065A37.782,37.782,0,0,0,43,42.937Z"
+                                      transform="translate(-3.002 -3)" fill="#641e1e"/>
+                            </svg>
+                            <span>Möchten Sie uns lieber anrufen?</span>
+                            <a href="+49 (0)176 344 95 175">+49 (0)176 344 95 175</a>
+                            <p>Montag bis Freitag 08:00 – 18:00 Uhr</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<footer>
+    <div class="container">
+        <div class="footer-in">
+            <div class="footer-top">
+                <div>
+                    <a href="#">
+                        <img src="images/dest/logo_white.svg" alt="">
+                    </a>
+                </div>
+                <div>
+                    <img src="images/dest/footer.jpg" alt="">
+                </div>
+            </div>
+            <div class="footer-middle">
+                <div class="row footer-middle-row no-gutters">
+                    <div>
+                        <p>Ihre interdisziplinäre Privatpraxis
+                            und Privatklinik im Herzen von Berlin.
+                        </p>
+                        <p>Friedrichstraße 71
+                            10117 Berlin</p>
+                        <p>+49 (0)30 2094-4000 oder
+                            +49 (0)30 2094-4005
+                            info@meoclinic.de</p>
+                        <p>Montag – Freitag
+                            08:00-19:00</p>
+
+                    </div>
+                    <div>
+                        <div class="ico-box">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25.998" height="25.998"
+                                 viewBox="0 0 25.998 25.998">
+                                <path id="Контур_5791" data-name="Контур 5791"
+                                      d="M29,21l-7.612-.881-3.64,3.64a21.733,21.733,0,0,1-9.519-9.519l3.655-3.655L11,3H3.043A24.557,24.557,0,0,0,29,28.957Z"
+                                      transform="translate(-3.002 -3)" fill="#e2e9ef"/>
+                            </svg>
+                            <div>
+                                <span>Telefon</span>
+                                <a href="+49 30 2094 4000">+49 30 2094 4000</a>
+                            </div>
+                        </div>
+                        <div class="ico-box">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="24" viewBox="0 0 28 24">
+                                <path id="Контур_5795" data-name="Контур 5795"
+                                      d="M30,4H2V28H30Zm-2.8,6L16,17.5,4.8,10V7L16,14.5,27.2,7Z"
+                                      transform="translate(-2 -4)" fill="#e2e9ef"/>
+                            </svg>
+                            <div>
+                                <span>Mail</span>
+                                <a href="mailto:info@mitc.de">info@mitc.de</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="ico-box">
+                            <svg id="Сгруппировать_11426" data-name="Сгруппировать 11426"
+                                 xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+                                <path id="Контур_5792" data-name="Контур 5792" d="M0,0H32V32H0Z" fill="none"/>
+                                <path id="Контур_5793" data-name="Контур 5793"
+                                      d="M16.7,10.453H14.6V18.83l6.661,3.979,1.052-1.717L16.7,17.783ZM23.484,1.81l6.46,5.369L28.149,9.322,21.685,3.956Zm-14.968,0,1.8,2.145L3.852,9.322,2.057,7.177ZM16,4.868A12.566,12.566,0,1,0,28.62,17.434,12.594,12.594,0,0,0,16,4.868Zm0,22.34a9.774,9.774,0,1,1,9.816-9.774A9.806,9.806,0,0,1,16,27.208Z"
+                                      transform="translate(0)" fill="#e2e9ef"/>
+                            </svg>
+                            <div>
+                                <span>Öffnungszeiten</span>
+                                <span>Mo–Fr 8–19 Uhr</span>
+                            </div>
+                        </div>
+                        <div class="ico-box">
+                            <svg id="Сгруппировать_11435" data-name="Сгруппировать 11435"
+                                 xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+                                <path id="Контур_5796" data-name="Контур 5796" d="M0,0H32V32H0Z" fill="none"/>
+                                <path id="Контур_5797" data-name="Контур 5797"
+                                      d="M16,2,4.5,27.991,5.589,29,16,24.737,26.411,29,27.5,27.991Z"
+                                      transform="translate(0 0)" fill="#e2e9ef"/>
+                            </svg>
+                            <div>
+                                <span>Adresse</span>
+                                <span>Friedrichstraße 71, 10117 Berlin</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <ul>
+                            <li><a href="#">Impressum</a></li>
+                            <li><a href="#">Datenschutz</a></li>
+                            <li><a href="#">Karriere</a></li>
+                            <li><a href="#">Kontakt</a></li>
+                            <li><a href="#">Kontakt</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span class="d-none d-sm-block"></span>
+            <p>©MITC Kliniken – Design: sign-berlin.de</p>
+            <div>
+                <b class="d-block d-sm-none">Nach Oben</b>
+                <div id="upbutton">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path id="Контур_4362" data-name="Контур 4362"
+                              d="M12,0,9.885,2.115l8.37,8.385H0v3H18.255l-8.37,8.385L12,24,24,12Z"
+                              transform="translate(0 24) rotate(-90)" fill="#0c380f"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</footer>
+
+<script src="js/app.min.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+
+    <meta charset="utf-8">
+    <title>Mitc kliniken</title>
+    <link rel="stylesheet" href="bootstrap/build/bootstrap.min.css">
+    <link rel="stylesheet" href="css/app.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+
+<header>
+    <div class="container">
+        <div class="header-in">
+            <a href="#" class="header-logo">
+                <img src="images/dest/logo.svg" alt="">
+            </a>
+            <div class="header-menu ">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Fachgebiete</a>
+                        <ul>
+                            <li><a href="#">Chirurgie</a></li>
+                            <li><a href="#">Gynäkologie</a></li>
+                            <li><a href="#">Urologie</a></li>
+                            <li><a href="#">Gastroenterologie</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Zentren</a>
+                        <ul>
+                            <li><a href="#">Koloproktologie-Zentrum</a></li>
+                            <li><a href="#">Endometriosezentrum</a></li>
+                            <li><a href="#">Refluxzentrum</a></li>
+                            <li><a href="#">Hernienzentrum</a></li>
+                            <li><a href="#">Myomzentrum</a></li>
+                            <li><a href="#">Gastroenterologie Zentrum</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Fachärzte</a>
+                        <ul>
+                            <li><a href="#">Warum MITC-Ärzte?</a></li>
+                            <li><a href="#">Kontakt Fachärzte</a></li>
+                            <li><a href="#">Experten Zweitmeinung</a></li>
+                            <li><a href="#">Individuelle persönliche Behandlung</a></li>
+                            <li><a href="#">Indikation und Operation</a></li>
+                            <li><a href="#">Komplexe schwere Fälle</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">MITC-Klinik</a>
+                        <ul>
+                            <li><a href="#">Warum MITC?</a></li>
+                            <li><a href="#">Warum Minimalinvasiv?</a></li>
+                            <li><a href="#">Philosophie</a></li>
+                            <li><a href="#">Service Excellence</a></li>
+                            <li><a href="#">Qualitätsversprechen</a></li>
+                            <li><a href="#">Schnelle Terminvergabe</a></li>
+                            <li><a href="#">Kurzstationär ambulant</a></li>
+                            <li><a href="#">Moderne Technologie</a></li>
+                            <li><a href="#">Interdisziplinäre personalisierte Behandlung</a></li>
+                            <li><a href="#">Patientenzentrierte Prozesse und Abläufe</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">KOntakt</a></li>
+                </ul>
+                <div class="header-togglebox d-none d-xl-block">
+                    <div class="search-icon">
+                        <form class="search-toggle" action="http://localhost:3000/">
+                            <input name="s" type="search">
+                            <input type="submit">
+                            <span class="header-search-toggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path d="M508.5 481.6l-129-129c-2.3-2.3-5.3-3.5-8.5-3.5h-10.3C395 312 416 262.5 416 208 416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c54.5 0 104-21 141.1-55.2V371c0 3.2 1.3 6.2 3.5 8.5l129 129c4.7 4.7 12.3 4.7 17 0l9.9-9.9c4.7-4.7 4.7-12.3 0-17zM208 384c-97.3 0-176-78.7-176-176S110.7 32 208 32s176 78.7 176 176-78.7 176-176 176z"/></svg>
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                            <path d="M193.94 256L296.5 153.44l21.15-21.15c3.12-3.12 3.12-8.19 0-11.31l-22.63-22.63c-3.12-3.12-8.19-3.12-11.31 0L160 222.06 36.29 98.34c-3.12-3.12-8.19-3.12-11.31 0L2.34 120.97c-3.12 3.12-3.12 8.19 0 11.31L126.06 256 2.34 379.71c-3.12 3.12-3.12 8.19 0 11.31l22.63 22.63c3.12 3.12 8.19 3.12 11.31 0L160 289.94 262.56 392.5l21.15 21.15c3.12 3.12 8.19 3.12 11.31 0l22.63-22.63c3.12-3.12 3.12-8.19 0-11.31L193.94 256z"/>
+                          </svg>
+                    </span>
+                        </form>
+                    </div>
+                    <div class="closemenu-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                            <path d="M193.94 256L296.5 153.44l21.15-21.15c3.12-3.12 3.12-8.19 0-11.31l-22.63-22.63c-3.12-3.12-8.19-3.12-11.31 0L160 222.06 36.29 98.34c-3.12-3.12-8.19-3.12-11.31 0L2.34 120.97c-3.12 3.12-3.12 8.19 0 11.31L126.06 256 2.34 379.71c-3.12 3.12-3.12 8.19 0 11.31l22.63 22.63c3.12 3.12 8.19 3.12 11.31 0L160 289.94 262.56 392.5l21.15 21.15c3.12 3.12 8.19 3.12 11.31 0l22.63-22.63c3.12-3.12 3.12-8.19 0-11.31L193.94 256z"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="mobile-togglebox d-xl-none">
+                <div class="icon-menuopen">
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="body">
+    <section class="page-top">
+        <div class="container">
+            <div class="page-top-in">
+                <img class="object-cover" src="images/dest/page-top-bg.jpg" alt="">
+                <div class="page-top-text">
+                    <h1>Unsere
+                        Zentren</h1>
+                </div>
+                <div class="page-top-cat">
+                    <a href="#" class="slider-cat orange-slider-cat">
+                        <img src="images/dest/slide4.svg" alt="">
+                        <span>Termin vereinbaren</span>
+                    </a>
+                </div>
+            </div>
+            <div class="green_block"></div>
+        </div>
+    </section>
+    <section class="text-block">
+        <div class="container">
+            <div class="text-block-in sizer-cont">
+                <div class="t-section">
+                    <h3>Kompetenz</h3>
+                    <h2>MITC
+                        Zentren</h2>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean
+                    massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                <p>Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
+                    Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.</p>
+                <a href="#" class="more">mehr …</a>
+            </div>
+        </div>
+    </section>
+    <section class="centers-card blue-bg">
+        <div class="container">
+            <div class="centers-card-in row no-gutters sizer-cont">
+                <div class="item-card">
+                    <a href="#" class="center-image">
+                        <img src="images/dest/center1.svg" alt="">
+                    </a>
+                    <a href="#"><b>Koloproktologie-Zentrum</b></a>
+                    <p>Facharzt für Allgemeine-,
+                        Viszeral- und Gefäßchirurgie, Proktologie</p>
+                    <a href="#" class="doctor-more">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path id="Контур_4362" data-name="Контур 4362"
+                                  d="M12,0,9.885,2.115l8.37,8.385H0v3H18.255l-8.37,8.385L12,24,24,12Z"
+                                  transform="translate(0 24) rotate(-90)" fill="#0b340e"/>
+                        </svg>
+                    </a>
+                </div>
+                <div class="item-card">
+                    <a href="#" class="center-image">
+                        <img src="images/dest/center2.svg" alt="">
+                    </a>
+                    <a href="#"><b>Hernienzentrum</b></a>
+                    <p>Facharzt für Allgemeine-,
+                        Viszeral- und Gefäßchirurgie, Proktologie</p>
+                    <a href="#" class="doctor-more">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path id="Контур_4362" data-name="Контур 4362"
+                                  d="M12,0,9.885,2.115l8.37,8.385H0v3H18.255l-8.37,8.385L12,24,24,12Z"
+                                  transform="translate(0 24) rotate(-90)" fill="#0b340e"/>
+                        </svg>
+                    </a>
+                </div>
+                <div class="item-card">
+                    <a href="#" class="center-image">
+                        <img src="images/dest/center3.svg" alt="">
+                    </a>
+                    <a href="#"><b>Endometriosezentrum</b></a>
+                    <p>Facharzt für Allgemeine-,
+                        Viszeral- und Gefäßchirurgie, Proktologie</p>
+                    <a href="#" class="doctor-more">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path id="Контур_4362" data-name="Контур 4362"
+                                  d="M12,0,9.885,2.115l8.37,8.385H0v3H18.255l-8.37,8.385L12,24,24,12Z"
+                                  transform="translate(0 24) rotate(-90)" fill="#0b340e"/>
+                        </svg>
+                    </a>
+                </div>
+                <div class="item-card">
+                    <a href="#" class="center-image">
+                        <img src="images/dest/center3.svg" alt="">
+                    </a>
+                    <a href="#"><b>Koloproktologie-Zentrum</b></a>
+                    <p>Facharzt für Allgemeine-,
+                        Viszeral- und Gefäßchirurgie, Proktologie</p>
+                    <a href="#" class="doctor-more">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path id="Контур_4362" data-name="Контур 4362"
+                                  d="M12,0,9.885,2.115l8.37,8.385H0v3H18.255l-8.37,8.385L12,24,24,12Z"
+                                  transform="translate(0 24) rotate(-90)" fill="#0b340e"/>
+                        </svg>
+                    </a>
+                </div>
+                <div class="item-card">
+                    <a href="#" class="center-image">
+                        <img src="images/dest/center5.svg" alt="">
+                    </a>
+                    <a href="#"><b>Refluxzentrum</b></a>
+                    <p>Facharzt für Allgemeine-,
+                        Viszeral- und Gefäßchirurgie, Proktologie</p>
+                    <a href="#" class="doctor-more">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path id="Контур_4362" data-name="Контур 4362"
+                                  d="M12,0,9.885,2.115l8.37,8.385H0v3H18.255l-8.37,8.385L12,24,24,12Z"
+                                  transform="translate(0 24) rotate(-90)" fill="#0b340e"/>
+                        </svg>
+                    </a>
+                </div>
+                <div class="item-card">
+                    <a href="#" class="center-image">
+                        <img src="images/dest/center6.svg" alt="">
+                    </a>
+                    <a href="#"><b>Gastroenterologie Zentrum</b></a>
+                    <p>Facharzt für Allgemeine-,
+                        Viszeral- und Gefäßchirurgie, Proktologie</p>
+                    <a href="#" class="doctor-more">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path id="Контур_4362" data-name="Контур 4362"
+                                  d="M12,0,9.885,2.115l8.37,8.385H0v3H18.255l-8.37,8.385L12,24,24,12Z"
+                                  transform="translate(0 24) rotate(-90)" fill="#0b340e"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<footer>
+    <div class="container">
+        <div class="footer-in">
+            <div class="footer-top">
+                <div>
+                    <a href="#">
+                        <img src="images/dest/logo_white.svg" alt="">
+                    </a>
+                </div>
+                <div>
+                    <img src="images/dest/footer.jpg" alt="">
+                </div>
+            </div>
+            <div class="footer-middle">
+                <div class="row footer-middle-row no-gutters">
+                    <div>
+                        <p>Ihre interdisziplinäre Privatpraxis
+                            und Privatklinik im Herzen von Berlin.
+                        </p>
+                        <p>Friedrichstraße 71
+                            10117 Berlin</p>
+                        <p>+49 (0)30 2094-4000 oder
+                            +49 (0)30 2094-4005
+                            info@meoclinic.de</p>
+                        <p>Montag – Freitag
+                            08:00-19:00</p>
+
+                    </div>
+                    <div>
+                        <div class="ico-box">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25.998" height="25.998"
+                                 viewBox="0 0 25.998 25.998">
+                                <path id="Контур_5791" data-name="Контур 5791"
+                                      d="M29,21l-7.612-.881-3.64,3.64a21.733,21.733,0,0,1-9.519-9.519l3.655-3.655L11,3H3.043A24.557,24.557,0,0,0,29,28.957Z"
+                                      transform="translate(-3.002 -3)" fill="#e2e9ef"/>
+                            </svg>
+                            <div>
+                                <span>Telefon</span>
+                                <a href="+49 30 2094 4000">+49 30 2094 4000</a>
+                            </div>
+                        </div>
+                        <div class="ico-box">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="24" viewBox="0 0 28 24">
+                                <path id="Контур_5795" data-name="Контур 5795"
+                                      d="M30,4H2V28H30Zm-2.8,6L16,17.5,4.8,10V7L16,14.5,27.2,7Z"
+                                      transform="translate(-2 -4)" fill="#e2e9ef"/>
+                            </svg>
+                            <div>
+                                <span>Mail</span>
+                                <a href="mailto:info@mitc.de">info@mitc.de</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="ico-box">
+                            <svg id="Сгруппировать_11426" data-name="Сгруппировать 11426"
+                                 xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+                                <path id="Контур_5792" data-name="Контур 5792" d="M0,0H32V32H0Z" fill="none"/>
+                                <path id="Контур_5793" data-name="Контур 5793"
+                                      d="M16.7,10.453H14.6V18.83l6.661,3.979,1.052-1.717L16.7,17.783ZM23.484,1.81l6.46,5.369L28.149,9.322,21.685,3.956Zm-14.968,0,1.8,2.145L3.852,9.322,2.057,7.177ZM16,4.868A12.566,12.566,0,1,0,28.62,17.434,12.594,12.594,0,0,0,16,4.868Zm0,22.34a9.774,9.774,0,1,1,9.816-9.774A9.806,9.806,0,0,1,16,27.208Z"
+                                      transform="translate(0)" fill="#e2e9ef"/>
+                            </svg>
+                            <div>
+                                <span>Öffnungszeiten</span>
+                                <span>Mo–Fr 8–19 Uhr</span>
+                            </div>
+                        </div>
+                        <div class="ico-box">
+                            <svg id="Сгруппировать_11435" data-name="Сгруппировать 11435"
+                                 xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+                                <path id="Контур_5796" data-name="Контур 5796" d="M0,0H32V32H0Z" fill="none"/>
+                                <path id="Контур_5797" data-name="Контур 5797"
+                                      d="M16,2,4.5,27.991,5.589,29,16,24.737,26.411,29,27.5,27.991Z"
+                                      transform="translate(0 0)" fill="#e2e9ef"/>
+                            </svg>
+                            <div>
+                                <span>Adresse</span>
+                                <span>Friedrichstraße 71, 10117 Berlin</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <ul>
+                            <li><a href="#">Impressum</a></li>
+                            <li><a href="#">Datenschutz</a></li>
+                            <li><a href="#">Karriere</a></li>
+                            <li><a href="#">Kontakt</a></li>
+                            <li><a href="#">Kontakt</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span class="d-none d-sm-block"></span>
+            <p>©MITC Kliniken – Design: sign-berlin.de</p>
+            <div>
+                <b class="d-block d-sm-none">Nach Oben</b>
+                <div id="upbutton">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path id="Контур_4362" data-name="Контур 4362" d="M12,0,9.885,2.115l8.37,8.385H0v3H18.255l-8.37,8.385L12,24,24,12Z" transform="translate(0 24) rotate(-90)" fill="#0c380f"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</footer>
+
+<script src="js/app.min.js"></script>
+
+</body>
+</html>
