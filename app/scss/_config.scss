@@ -7,6 +7,10 @@ $grey: #647a84;
 $greytext: #506670;
 $green_new: #0c380f;
 $orange: #db9f3f;
+$primary: #11998e;
+$secondary: #38ef7d;
+$white: #fff;
+$gray: #9b9b9b;
 $accent: #f2b24f; // Accent Color
 $fontsize: 16px; // Body Font Size
 $textcolor: #000; // Text Color
@@ -65,8 +69,6 @@ $gutter: $grid-gutter-width;
 
 input, textarea {
 	outline: none;
-	&:focus:required:invalid { border-color: red }
-	&:required:valid { border-color: green }
 }
 
 body {
@@ -77,4 +79,8 @@ body {
 	min-width: 320px;
 	position: relative;
 	overflow-x: hidden;
+}
+
+label {
+	cursor: pointer;
 }

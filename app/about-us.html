@@ -66,23 +66,30 @@
                     </li>
                     <li><a href="">KOntakt</a></li>
                 </ul>
+                <form method="get" action="" class="search-box">
+                    <div class="search-box-in">
+                        <b>Suche</b>
+                        <div class="search-input">
+                            <input name="s" type="search" id="search">
+                            <label for="search">Ihr Suchbegriff</label>
+                        </div>
+                        <div class="chechboxes row no-gutters">
+                            <div class="checkbox-label">
+                                <input class="chb" id="alleworter" type="checkbox">
+                                <label for="alleworter">finde alle Wörter </label>
+                            </div>
+                            <div class="checkbox-label">
+                                <input class="chb" id="irgendeinworts" type="checkbox">
+                                <label for="irgendeinworts">finde irgendein Wort</label>
+                            </div>
+                        </div>
+                        <button class="btn" type="submit"><span>Suchen</span></button>
+                    </div>
+                </form>
                 <div class="header-togglebox d-none d-xl-block">
                     <div class="search-icon">
-                        <form class="search-toggle" action="http://localhost:3000/">
-                            <input name="s" type="search">
-                            <input type="submit">
-                            <span class="header-search-toggle">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="M508.5 481.6l-129-129c-2.3-2.3-5.3-3.5-8.5-3.5h-10.3C395 312 416 262.5 416 208 416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c54.5 0 104-21 141.1-55.2V371c0 3.2 1.3 6.2 3.5 8.5l129 129c4.7 4.7 12.3 4.7 17 0l9.9-9.9c4.7-4.7 4.7-12.3 0-17zM208 384c-97.3 0-176-78.7-176-176S110.7 32 208 32s176 78.7 176 176-78.7 176-176 176z"/></svg>
-                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
-                            <path d="M193.94 256L296.5 153.44l21.15-21.15c3.12-3.12 3.12-8.19 0-11.31l-22.63-22.63c-3.12-3.12-8.19-3.12-11.31 0L160 222.06 36.29 98.34c-3.12-3.12-8.19-3.12-11.31 0L2.34 120.97c-3.12 3.12-3.12 8.19 0 11.31L126.06 256 2.34 379.71c-3.12 3.12-3.12 8.19 0 11.31l22.63 22.63c3.12 3.12 8.19 3.12 11.31 0L160 289.94 262.56 392.5l21.15 21.15c3.12 3.12 8.19 3.12 11.31 0l22.63-22.63c3.12-3.12 3.12-8.19 0-11.31L193.94 256z"/>
-                          </svg>
-                    </span>
-                        </form>
-                    </div>
-                    <div class="closemenu-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
-                            <path d="M193.94 256L296.5 153.44l21.15-21.15c3.12-3.12 3.12-8.19 0-11.31l-22.63-22.63c-3.12-3.12-8.19-3.12-11.31 0L160 222.06 36.29 98.34c-3.12-3.12-8.19-3.12-11.31 0L2.34 120.97c-3.12 3.12-3.12 8.19 0 11.31L126.06 256 2.34 379.71c-3.12 3.12-3.12 8.19 0 11.31l22.63 22.63c3.12 3.12 8.19 3.12 11.31 0L160 289.94 262.56 392.5l21.15 21.15c3.12 3.12 8.19 3.12 11.31 0l22.63-22.63c3.12-3.12 3.12-8.19 0-11.31L193.94 256z"/>
+                            <path d="M508.5 481.6l-129-129c-2.3-2.3-5.3-3.5-8.5-3.5h-10.3C395 312 416 262.5 416 208 416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c54.5 0 104-21 141.1-55.2V371c0 3.2 1.3 6.2 3.5 8.5l129 129c4.7 4.7 12.3 4.7 17 0l9.9-9.9c4.7-4.7 4.7-12.3 0-17zM208 384c-97.3 0-176-78.7-176-176S110.7 32 208 32s176 78.7 176 176-78.7 176-176 176z"/>
                         </svg>
                     </div>
                 </div>
@@ -189,12 +196,13 @@
                             <li>Exzellente Experten</li>
                             <li>Maximale Pflege</li>
                         </ul>
-                        <select id="erfahren1" class="erfahren-select" name="erfahren">
-                            <option value="test1">Erfahren Sie mehr</option>
-                            <option value="test2">Erfahren Sie mehr1</option>
-                            <option value="test3">Erfahren Sie mehr2</option>
-                            <option value="test4">Erfahren Sie mehr3</option>
-                        </select>
+                        <a href="#" class="more-btn">
+                            <span>Erfahren Sie mehr</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="11.115" height="18" viewBox="0 0 11.115 18">
+                                <path id="Контур_6331" data-name="Контур 6331"
+                                      d="M2.115,0,0,2.115,6.87,9,0,15.885,2.115,18l9-9Z"/>
+                            </svg>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -220,12 +228,13 @@
                             nicht nur die Erkrankung.</p>
                         <p>Wenn wir Menschen verletzen, um zu therapieren, dann mit dem Anspruch:</p>
                         <b>NUR SO VIEL WIE NÖTIG – SO WENIG WIE MÖGLICH.</b>
-                        <select id="erfahren2" class="erfahren-select" name="erfahren">
-                            <option value="test1">Erfahren Sie mehr</option>
-                            <option value="test2">Erfahren Sie mehr1</option>
-                            <option value="test3">Erfahren Sie mehr2</option>
-                            <option value="test4">Erfahren Sie mehr3</option>
-                        </select>
+                        <a href="#" class="more-btn">
+                            <span>Erfahren Sie mehr</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="11.115" height="18" viewBox="0 0 11.115 18">
+                                <path id="Контур_6331" data-name="Контур 6331"
+                                      d="M2.115,0,0,2.115,6.87,9,0,15.885,2.115,18l9-9Z"/>
+                            </svg>
+                        </a>
                     </div>
                 </div>
                 <div class="simpleimgtext-img img-bframe">
@@ -258,12 +267,13 @@
                             ambulant oder kurzstationär zu Ihrer Therapie „boarden“. Dieses können Sie ebenfalls über
                             ein
                             Terminal erledigen, oder aber auch über unser Logistic Center.</p>
-                        <select id="erfahren3" class="erfahren-select" name="erfahren">
-                            <option value="test1">Erfahren Sie mehr</option>
-                            <option value="test2">Erfahren Sie mehr1</option>
-                            <option value="test3">Erfahren Sie mehr2</option>
-                            <option value="test4">Erfahren Sie mehr3</option>
-                        </select>
+                        <a href="#" class="more-btn">
+                            <span>Erfahren Sie mehr</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="11.115" height="18" viewBox="0 0 11.115 18">
+                                <path id="Контур_6331" data-name="Контур 6331"
+                                      d="M2.115,0,0,2.115,6.87,9,0,15.885,2.115,18l9-9Z"/>
+                            </svg>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -289,12 +299,13 @@
                             nicht nur die Erkrankung.</p>
                         <p>Wenn wir Menschen verletzen, um zu therapieren, dann mit dem Anspruch:</p>
                         <b>NUR SO VIEL WIE NÖTIG – SO WENIG WIE MÖGLICH.</b>
-                        <select id="erfahren4" class="erfahren-select" name="erfahren">
-                            <option value="test1">Erfahren Sie mehr</option>
-                            <option value="test2">Erfahren Sie mehr1</option>
-                            <option value="test3">Erfahren Sie mehr2</option>
-                            <option value="test4">Erfahren Sie mehr3</option>
-                        </select>
+                        <a href="#" class="more-btn">
+                            <span>Erfahren Sie mehr</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="11.115" height="18" viewBox="0 0 11.115 18">
+                                <path id="Контур_6331" data-name="Контур 6331"
+                                      d="M2.115,0,0,2.115,6.87,9,0,15.885,2.115,18l9-9Z"/>
+                            </svg>
+                        </a>
                     </div>
                 </div>
                 <div class="simpleimgtext-img img-bframe">
@@ -337,13 +348,53 @@
                                 unsere
                                 Eingriffe weiter sinnvoll zu minimieren.</p>
                         </div>
-                        <select id="erfahren5" class="erfahren-select" name="erfahren">
-                            <option value="test1">Erfahren Sie mehr</option>
-                            <option value="test2">Erfahren Sie mehr1</option>
-                            <option value="test3">Erfahren Sie mehr2</option>
-                            <option value="test4">Erfahren Sie mehr3</option>
-                        </select>
+                        <a href="#" class="more-btn">
+                            <span>Erfahren Sie mehr</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="11.115" height="18" viewBox="0 0 11.115 18">
+                                <path d="M2.115,0,0,2.115,6.87,9,0,15.885,2.115,18l9-9Z"/>
+                            </svg>
+                        </a>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="warum-parallax md-pd">
+        <div class="container">
+            <div style="background-image: url('images/dest/warummitcbg.jpg')" class="warum-parallax-in">
+                <div class="textrow-in">
+                    <h2 class="white mb-title">WARUM MITC?</h2>
+                    <p>Eine ausschließlich patientenzentrierte Gesundheitseinrichtung! Wir entscheiden mit Ihnen
+                        gemeinsam was Sie benötigen um gesund zu bleiben, oder zu werden. Sie sind damit weder gezwungen
+                        im Krankenhaus zu bleiben, oder wir behandeln Sie „nur“ ambulant. Es zählt Ihre persönliche
+                        Grundkonditionierung und die Art und Weise Ihrer Erkrankung. Dann entscheiden wir gemeinsam nach
+                        dem Prinzip: „So wenig wie möglich, so viel wie nötig“.</p>
+                    <p>Unser Team diskutiert und evaluiert mit Ihnen Ihre diagnostischen Resultate, das Design Ihrer
+                        Behandlung und empfielt Ihnen die besten Spezialisten und Experten auf diesem Gebiet. Gemeinsam
+                        mit unseren Pflegekräften, die ausgebildet sind auf einem zentralisierten Behandlungspfad, mit
+                        allen digitalen Möglichkeiten vertraut sind, Sie bestmöglichst zu betreuen.</p>
+                    <strong>Damit ist Ihr Gesundheitsplan nur auf Sie persönlich ausgerichtet. Die eigentliche Behandlung
+                        wird somit nach neusten Methoden und Technologien durchgeführt.</strong>
+                </div>
+            </div>
+            <div class="textrow-in">
+                <span class="red-after"></span>
+            </div>
+        </div>
+    </section>
+    <section class="uber-uns md-pd">
+        <div class="container">
+            <div class="uber-uns-in">
+                <div class="textrow-in">
+                    <h2 class="mb-1em">ÜBER UNS</h2>
+                    <p>Maßgeschneiderte Gesundheitspläne, personalisierte Medizin ausgerichtet auf Ihre persönlichen Bedürfnisse,
+                        als ganzheitliche angepasste Planstrukturen und notwendigen diagnostischen und therapeutischen
+                        Maßnahmen.</p>
+                    <p>Die MITC garantiert eine interdisziplinäre Zusammenarbeit mit den notwendigen Fachdisziplinen für eine
+                        effektive patientenzentrierte ganzheitliche Behandlung.</p>
+                </div>
+                <div class="textrow-in">
+                    <span class="red-after"></span>
                 </div>
             </div>
         </div>
@@ -393,10 +444,20 @@
                                 </div>
                                 <div class="row twoinputs-row no-gutters">
                                     <div>
-                                        <input placeholder="Vorname" type="text">
+                                        <div class="form__group">
+                                            <input type="input" class="form__field" placeholder="Vorname" name="vorname"
+                                                   id='vorname' required/>
+                                            <label for="vorname" class="form__label">Vorname</label>
+                                        </div>
+                                        <!--                                        <input placeholder="Vorname" type="text">-->
                                     </div>
                                     <div>
-                                        <input placeholder="Nachname" type="text">
+                                        <div class="form__group">
+                                            <input type="input" class="form__field" placeholder="Nachname"
+                                                   name="nachname" id='nachname' required/>
+                                            <label for="nachname" class="form__label">Nachname</label>
+                                        </div>
+                                        <!--                                        <input placeholder="Nachname" type="text">-->
                                     </div>
                                 </div>
                             </div>
@@ -429,10 +490,20 @@
                                     <b>Kontakt</b>
                                     <div class="row no-gutters twoinputs-row">
                                         <div>
-                                            <input placeholder="E-Mail" type="text">
+                                            <div class="form__group">
+                                                <input type="email" class="form__field" placeholder="E-Mail"
+                                                       name="email" id='email' required/>
+                                                <label for="email" class="form__label">E-Mail</label>
+                                            </div>
+                                            <!--                                            <input placeholder="E-Mail" type="text">-->
                                         </div>
                                         <div>
-                                            <input placeholder="Telefon" type="text">
+                                            <div class="form__group">
+                                                <input type="tel" class="form__field" placeholder="Telefon" name="phone"
+                                                       id='phone' required/>
+                                                <label for="phone" class="form__label">Telefon</label>
+                                            </div>
+                                            <!--                                            <input placeholder="Telefon" type="text">-->
                                         </div>
                                     </div>
                                     <div class="checkbox-label">
@@ -459,7 +530,8 @@
                                     </div>
                                     <div class="checkbox-label">
                                         <input id="Hiermit" type="checkbox">
-                                        <label for="Hiermit">Hiermit stimme ich den Datenschutzhinweisen zu.</label>
+                                        <label for="Hiermit">Hiermit stimme ich den
+                                            Datenschutzhinweisen zu.</label>
                                     </div>
                                 </div>
                             </div>
@@ -478,7 +550,6 @@
                             <h2>Termin
                                 vereinbaren</h2>
                         </div>
-
                         <p>Unsere Ärzte sind anerkannte Spezialisten mit einem breiten Spektrum minimalinvasiver
                             Therapien oder Endoskopien, mit dem Verständnis einer ganzheitlich, personalisierten
                             Diagnostik und Therapie.</p>
@@ -533,8 +604,7 @@
                         <div class="ico-box">
                             <svg xmlns="http://www.w3.org/2000/svg" width="25.998" height="25.998"
                                  viewBox="0 0 25.998 25.998">
-                                <path id="Контур_5791" data-name="Контур 5791"
-                                      d="M29,21l-7.612-.881-3.64,3.64a21.733,21.733,0,0,1-9.519-9.519l3.655-3.655L11,3H3.043A24.557,24.557,0,0,0,29,28.957Z"
+                                <path d="M29,21l-7.612-.881-3.64,3.64a21.733,21.733,0,0,1-9.519-9.519l3.655-3.655L11,3H3.043A24.557,24.557,0,0,0,29,28.957Z"
                                       transform="translate(-3.002 -3)" fill="#e2e9ef"/>
                             </svg>
                             <div>
@@ -544,8 +614,7 @@
                         </div>
                         <div class="ico-box">
                             <svg xmlns="http://www.w3.org/2000/svg" width="28" height="24" viewBox="0 0 28 24">
-                                <path id="Контур_5795" data-name="Контур 5795"
-                                      d="M30,4H2V28H30Zm-2.8,6L16,17.5,4.8,10V7L16,14.5,27.2,7Z"
+                                <path d="M30,4H2V28H30Zm-2.8,6L16,17.5,4.8,10V7L16,14.5,27.2,7Z"
                                       transform="translate(-2 -4)" fill="#e2e9ef"/>
                             </svg>
                             <div>
@@ -556,12 +625,10 @@
                     </div>
                     <div>
                         <div class="ico-box">
-                            <svg id="Сгруппировать_11426" data-name="Сгруппировать 11426"
-                                 xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
-                                <path id="Контур_5792" data-name="Контур 5792" d="M0,0H32V32H0Z" fill="none"/>
-                                <path id="Контур_5793" data-name="Контур 5793"
-                                      d="M16.7,10.453H14.6V18.83l6.661,3.979,1.052-1.717L16.7,17.783ZM23.484,1.81l6.46,5.369L28.149,9.322,21.685,3.956Zm-14.968,0,1.8,2.145L3.852,9.322,2.057,7.177ZM16,4.868A12.566,12.566,0,1,0,28.62,17.434,12.594,12.594,0,0,0,16,4.868Zm0,22.34a9.774,9.774,0,1,1,9.816-9.774A9.806,9.806,0,0,1,16,27.208Z"
-                                      transform="translate(0)" fill="#e2e9ef"/>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+                                <path d="M0,0H32V32H0Z" fill="none"/>
+                                <path d="M16.7,10.453H14.6V18.83l6.661,3.979,1.052-1.717L16.7,17.783ZM23.484,1.81l6.46,5.369L28.149,9.322,21.685,3.956Zm-14.968,0,1.8,2.145L3.852,9.322,2.057,7.177ZM16,4.868A12.566,12.566,0,1,0,28.62,17.434,12.594,12.594,0,0,0,16,4.868Zm0,22.34a9.774,9.774,0,1,1,9.816-9.774A9.806,9.806,0,0,1,16,27.208Z"
+                                      fill="#e2e9ef"/>
                             </svg>
                             <div>
                                 <span>Öffnungszeiten</span>
@@ -571,10 +638,8 @@
                         <div class="ico-box">
                             <svg id="Сгруппировать_11435" data-name="Сгруппировать 11435"
                                  xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
-                                <path id="Контур_5796" data-name="Контур 5796" d="M0,0H32V32H0Z" fill="none"/>
-                                <path id="Контур_5797" data-name="Контур 5797"
-                                      d="M16,2,4.5,27.991,5.589,29,16,24.737,26.411,29,27.5,27.991Z"
-                                      transform="translate(0 0)" fill="#e2e9ef"/>
+                                <path d="M0,0H32V32H0Z" fill="none"/>
+                                <path d="M16,2,4.5,27.991,5.589,29,16,24.737,26.411,29,27.5,27.991Z" fill="#e2e9ef"/>
                             </svg>
                             <div>
                                 <span>Adresse</span>
@@ -602,7 +667,9 @@
                 <b class="d-block d-sm-none">Nach Oben</b>
                 <div id="upbutton">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                        <path id="Контур_4362" data-name="Контур 4362" d="M12,0,9.885,2.115l8.37,8.385H0v3H18.255l-8.37,8.385L12,24,24,12Z" transform="translate(0 24) rotate(-90)" fill="#0c380f"/>
+                        <path id="Контур_4362" data-name="Контур 4362"
+                              d="M12,0,9.885,2.115l8.37,8.385H0v3H18.255l-8.37,8.385L12,24,24,12Z"
+                              transform="translate(0 24) rotate(-90)" fill="#0c380f"/>
                     </svg>
                 </div>
             </div>
